@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2937;
+    color: #D5D4D8;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header, main {
+    margin-left: 14px;
+}
+
+header {
+    margin-top: 25px;
+}
+
+button {
+    background-color: #3D4B60;
+    color: white;
+    padding: 13px 11px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#scheme-type-select {
+    background-color: inherit;
+    color: inherit;
+    padding: 9px 13px;
+    border-radius: 6px;
+}
