@@ -23,8 +23,8 @@ button {
     font-weight: 500;
 }
 
-#scheme-type-select {
-    background-color: inherit;
+#scheme-mode-select {
+    background-color: #1F2937;
     color: inherit;
     padding: 9px 13px;
     border-radius: 6px;
