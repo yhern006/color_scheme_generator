@@ -10,7 +10,7 @@ html, body {
 }
 
 header, main {
-    margin-left: 14px;
+    padding-left: 14px;
 }
 
 header {
@@ -18,9 +18,12 @@ header {
 }
 
 main {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
     height: 43px;
     display: flex;
+    box-shadow: 0 2px 11px rgb(0 0 0 / 0.15);
+    position: relative;
+    z-index: 1;
 }
 
 button {
@@ -90,6 +93,7 @@ option::checkmark {
 }
 
 #scheme-result {
+    z-index: -1;
     margin: 0;
     padding: 0;
     display: flex;
