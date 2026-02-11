@@ -29,3 +29,17 @@ button {
     padding: 9px 13px;
     border-radius: 6px;
 }
+
+#scheme-result {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    min-width: 100%;
+    min-height: 500px;
+}
+
+.scheme-color {
+    width: 50%;
+}

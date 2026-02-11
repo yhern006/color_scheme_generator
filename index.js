@@ -10,7 +10,21 @@ function fetchColorScheme() {
     console.log(schemeModeClean)
     fetch(`https://www.thecolorapi.com/scheme?hex=${seedColorClean}&format=json&mode=${schemeModeClean}`)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            
+            const schemeResultEl = document.getElementById('scheme-result')
+
+            let colorList = ''
+            data.colors.forEach(color => {
+                console.log(`color: ${color.hex.value}`)
+
+                colorList += `
+                    <li class='scheme-color'
+                        style='background-color:${color.hex.value}'>${color.hex.value}</li>
+                `
+            });
+            schemeResultEl.innerHTML = colorList
+        })
 }
 
 // ex: https://www.thecolorapi.com/scheme?hex=0047AB&format=html&mode=analogic&count=6
