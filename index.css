@@ -62,7 +62,7 @@ button:active {
     font-weight: 400;
     margin-right: 13px;
     width: 312px;
-    border: 1.1px solid;
+    border: 1.6px solid;
 }
 
 select,
@@ -100,7 +100,8 @@ option::checkmark {
     flex-direction: row;
     list-style: none;
     min-width: 100%;
-    min-height: 500px;
+    min-height: 60vh;
+    max-height: 80vh;
 }
 
 .scheme-color {
