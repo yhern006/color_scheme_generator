@@ -42,4 +42,13 @@ button {
 
 .scheme-color {
     width: 50%;
+    position: relative;
+}
+
+.scheme-color p {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    margin: 11px 0;
+    text-align: center;
 }

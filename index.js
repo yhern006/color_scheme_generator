@@ -20,7 +20,7 @@ function fetchColorScheme() {
 
                 colorList += `
                     <li class='scheme-color'
-                        style='background-color:${color.hex.value}'>${color.hex.value}</li>
+                        style='background-color:${color.hex.value}'><p>${color.hex.value}</p></li>
                 `
             });
             schemeResultEl.innerHTML = colorList
