@@ -29,8 +29,13 @@ function fetchColorScheme() {
 }
 
 function copyToClipboard(e){
-    console.log(e.target.id)
-    navigator.clipboard.writeText(`#${e.target.id}`)
+    const tagClicked = e.target.tagName.toLowerCase()
 
-    alert(`copied to clipboard: #${e.target.id}`)
+    if(tagClicked === 'li'){
+        navigator.clipboard.writeText(`#${e.target.id}`)
+    }
+    else if(tagClicked === 'p'){
+        console.log(e.target.textContent)
+        navigator.clipboard.writeText(`${e.target.textContent}`)
+    }
 }
