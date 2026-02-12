@@ -17,12 +17,16 @@ header {
     margin-top: 25px;
 }
 
+main, section,
+.scheme-color {
+    position: relative;
+}
+
 main {
     padding-bottom: 24px;
     height: 43px;
     display: flex;
     box-shadow: 0 2px 11px rgb(0 0 0 / 0.15);
-    position: relative;
     z-index: 1;
 }
 
@@ -51,6 +55,7 @@ button:active {
     margin-right: 12px;
     width: 61px;
     height: 100%;
+    cursor: pointer;
 }
 
 #scheme-mode-select {
@@ -104,9 +109,32 @@ option::checkmark {
     max-height: 80vh;
 }
 
+.modal-default {
+    display: none;
+    position: absolute;
+    background-color: rgb(73, 73, 73, 0.8);
+    opacity: 0;
+    color: white;
+    font-weight: 300;
+    padding: 8px 16px;
+    border-radius: 16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    max-width: 250px;
+    text-align: center;
+    transition: all 1s allow-discrete;
+}
+
+.modal-display {
+    display: block;
+    opacity: 1;
+    transition: all 2s ease-out;
+}
+
 .scheme-color {
     width: 50%;
-    position: relative;
 }
 
 .scheme-color p {
