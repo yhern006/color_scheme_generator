@@ -124,13 +124,13 @@ option::checkmark {
     bottom: 25px;
     max-width: 250px;
     text-align: center;
-    transition: all 1s allow-discrete;
+    transition: all 0.9s allow-discrete;
 }
 
 .modal-display {
     display: block;
     opacity: 1;
-    transition: all 2s ease-out;
+    transition: all 0.5s ease-in;
 }
 
 .scheme-color {
