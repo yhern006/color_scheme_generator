@@ -17,6 +17,10 @@ header {
     margin-top: 25px;
 }
 
+h1 {
+    font-size: 1.6rem;
+}
+
 main, section,
 .scheme-color {
     position: relative;
@@ -149,6 +153,42 @@ option::checkmark {
     margin: 11px 0;
     text-align: center;
     font-weight: 400;
+}
+
+@media (max-width: 415px) {
+    h1 {
+        font-size: 1.1rem !important;
+    }
+
+    main {
+        margin-bottom: 7rem !important;
+    }
+
+    #seed-color,
+    #scheme-mode-select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    main {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 3.4rem;
+    }
+    #seed-color {
+        min-width: 62px;
+    }
+    #scheme-mode-select {
+        min-width: 250px;
+    }
+    button {
+        width: 100%;
+        padding: 12px 11px;
+    }
 }
 
 @media (min-width: 720px) {
